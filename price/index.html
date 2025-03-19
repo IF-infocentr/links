@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="/links-beta/img/logoIcon.png">
+        <link rel="stylesheet" href="/links-beta/css/price.css">
+        <title>Ціни ІНФО-ЦЕНТР</title>
+
+        <script src="/links-beta/js/price.js"></script>
+        <script src="/links-beta/js/welcome.js"></script>
+    </head>
+    <body>
+        <div class="welcome-screen" id="welcomeScreen">
+			<img src="/links-beta/img/logo.png" alt="Welcome">
+		</div>
+
+        <header>
+            <div class="logotype">
+                <img alt="ІНФОРМАЦІЙНИЙ ЦЕНТР" id="headerLogo" src="/links-beta/img/logo.png">
+            </div>
+        </header>
+    
+        <div class="mainBtn">
+            <button class="buttonStyle" role="button" onclick="window.open('/links-beta/', '_self')">На головну</button><br>
+        </div>
+    
+        <main>
+            <h1 id="price">Ціни</h1>
+
+            <div class="result">
+                <p>Кінцева сумма: <span id="final-result">0</span> грн</p>
+            </div>
+        
+            <div id="services">
+                <div class="resetButton">
+                    <button class="reset">Скинути</button>
+                </div>
+                <!-- Користуються попитом -->
+
+                <h1>Користуються попитом</h1>
+                <div class="service">
+                    <label>Друк Ч/Б А4 (6 грн): </label><br>
+                    <button class="decrement">-</button>
+                    <span class="quantity" data-price="6">0</span>
+                    <button class="increment">+</button>
+                    <span class="result">== 0 грн</span><br><br>
+                </div>
+        
+                <div class="service">
+                    <label>Друк Ч/Б А4 Студентам (4 грн): </label><br>
+                    <button class="decrement">-</button>
+                    <span class="quantity" data-price="4">0</span>
+                    <button class="increment">+</button>
+                    <span class="result">== 0 грн</span><br><br>
+                </div>
+
+                <div class="service">
+                    <label>Друк Кольоровий А4 (12 грн): </label><br>
+                    <button class="decrement">-</button>
+                    <span class="quantity" data-price="12">0</span>
+                    <button class="increment">+</button>
+                    <span class="result">== 0 грн</span><br><br>
+                </div>
+
+                <div class="service">
+                    <label>Друк Фото 10&times;15см (12 грн): </label><br>
+                    <button class="decrement">-</button>
+                    <span class="quantity" data-price="12">0</span>
+                    <button class="increment">+</button>
+                    <span class="result">== 0 грн</span><br><br>
+                </div>    
+
+                <div class="service">
+                    <label>Полроїд на картоні до 6шт (35 грн): </label><br>
+                    <button class="decrement">-</button>
+                    <span class="quantity" data-price="35">0</span>
+                    <button class="increment">+</button>
+                    <span class="result">== 0 грн</span><br><br>
+                </div>
+        
+                <div class="service">
+                    <label>Друк Фото А4 (25 грн): </label><br>
+                    <button class="decrement">-</button>
+                    <span class="quantity" data-price="25">0</span>
+                    <button class="increment">+</button>
+                    <span class="result">== 0 грн</span><br><br>
+                </div>
+        
+                <div class="service">
+                    <label>Ксерокопія Ч/Б А4 (6 грн): </label><br>
+                    <button class="decrement">-</button>
+                    <span class="quantity" data-price="6">0</span>
+                    <button class="increment">+</button>
+                    <span class="result">== 0 грн</span><br><br>
+                </div>
+        
+                <!-- Друк -->
+                
+                <h1>Друк</h1> 
+                <div class="service">
+                    <label>Ч/Б А4 від 100ст. (4 грн): </label><br>
+                    <button class="decrement">-</button>
+                    <span class="quantity" data-price="4">0</span>
+                    <button class="increment">+</button>
+                    <span class="result">== 0 грн</span><br><br>
+                </div>
+        
+                <div class="service">
+                    <label>Ч/Б А3 (12 грн): </label><br>
+                    <button class="decrement">-</button>
+                    <span class="quantity" data-price="12">0</span>
+                    <button class="increment">+</button>
+                    <span class="result">== 0 грн</span><br><br>
+                </div>
+        
+                <div class="service">
+                    <label>Кольоровий А3 (24 грн): </label><br>
+                    <button class="decrement">-</button>
+                    <span class="quantity" data-price="24">0</span>
+                    <button class="increment">+</button>
+                    <span class="result">== 0 грн</span><br><br>
+                </div>
+        
+                <div class="service">
+                    <label>Спец. Папір А4 (15 грн): </label><br>
+                    <button class="decrement">-</button>
+                    <span class="quantity" data-price="15">0</span>
+                    <button class="increment">+</button>
+                    <span class="result">== 0 грн</span><br><br>
+                </div>
+        
+                <div class="service">
+                    <label>Спец. Папір А3 (25 грн): </label><br>
+                    <button class="decrement">-</button>
+                    <span class="quantity" data-price="25">0</span>
+                    <button class="increment">+</button>
+                    <span class="result">== 0 грн</span><br><br>
+                </div>
+        
+                <div class="service">
+                    <label>Самоклеючий папір А4 (25 грн): </label><br>
+                    <button class="decrement">-</button>
+                    <span class="quantity" data-price="25">0</span>
+                    <button class="increment">+</button>
+                    <span class="result">== 0 грн</span><br><br>
+                </div>
+        
+                <div class="service">
+                    <label>Фото А4 Матове (35 грн): </label><br>
+                    <button class="decrement">-</button>
+                    <span class="quantity" data-price="35">0</span>
+                    <button class="increment">+</button>
+                    <span class="result">== 0 грн</span><br><br>
+                </div>
+        
+                <!-- Підклас полароїдів -->
+                
+                <h2>Полароїди</h2>
+                <div class="service">
+                    <label>Полроїд до 12шт (25 грн): </label><br>
+                    <button class="decrement">-</button>
+                    <span class="quantity" data-price="25">0</span>
+                    <button class="increment">+</button>
+                    <span class="result">== 0 грн</span><br><br>
+                </div>
+        
+                <div class="service">
+                    <label>Полроїд до 6шт (25 грн): </label><br>
+                    <button class="decrement">-</button>
+                    <span class="quantity" data-price="25">0</span>
+                    <button class="increment">+</button>
+                    <span class="result">== 0 грн</span><br><br>
+                </div>
+        
+                <div class="service">
+                    <label>Полроїд на картоні до 12шт (35 грн): </label><br>
+                    <button class="decrement">-</button>
+                    <span class="quantity" data-price="35">0</span>
+                    <button class="increment">+</button>
+                    <span class="result">== 0 грн</span><br><br>
+                </div>
+        
+                <div class="service">
+                    <label>Полроїд на глянцевому папері до 12шт (45 грн): </label><br>
+                    <button class="decrement">-</button>
+                    <span class="quantity" data-price="35">0</span>
+                    <button class="increment">+</button>
+                    <span class="result">== 0 грн</span><br><br>
+                </div>
+
+                <div class="service">
+                    <label>Полроїд на глянцевому папері до 6шт (45 грн): </label><br>
+                    <button class="decrement">-</button>
+                    <span class="quantity" data-price="35">0</span>
+                    <button class="increment">+</button>
+                    <span class="result">== 0 грн</span><br><br>
+                </div>
+        
+                <!-- Ксерокопії -->
+
+                <h1>Ксерокопії</h1>
+                <div class="service">
+                    <label>Ч/Б А3 (12 грн): </label><br>
+                    <button class="decrement">-</button>
+                    <span class="quantity" data-price="12">0</span>
+                    <button class="increment">+</button>
+                    <span class="result">== 0 грн</span><br><br>
+                </div>
+        
+                <!-- Сканування -->
+
+                <h1>Сканування</h1>
+                <div class="service">
+                    <label>Сторінка А4 (10 грн): </label><br>
+                    <button class="decrement">-</button>
+                    <span class="quantity" data-price="12">0</span>
+                    <button class="increment">+</button>
+                    <span class="result">== 0 грн</span><br><br>
+                </div>
+        
+                <div class="service">
+                    <label>Сторінка А3 (20 грн): </label><br>
+                    <button class="decrement">-</button>
+                    <span class="quantity" data-price="12">0</span>
+                    <button class="increment">+</button>
+                    <span class="result">== 0 грн</span><br><br>
+                </div>
+        
+                <!-- Робота з носіями -->
+
+                <h1>Робота з носіями</h1>
+                <div class="service">
+                    <label>Запис на носії (30 грн): </label><br>
+                    <button class="decrement">-</button>
+                    <span class="quantity" data-price="30">0</span>
+                    <button class="increment">+</button>
+                    <span class="result">== 0 грн</span><br><br>
+                </div>
+        
+                <div class="service">
+                    <label>Запис на CD диск (35 грн): </label><br>
+                    <button class="decrement">-</button>
+                    <span class="quantity" data-price="35">0</span>
+                    <button class="increment">+</button>
+                    <span class="result">== 0 грн</span><br><br>
+                </div>
+        
+                <div class="service">
+                    <label>Запис на DVD диск (35 грн): </label><br>
+                    <button class="decrement">-</button>
+                    <span class="quantity" data-price="35">0</span>
+                    <button class="increment">+</button>
+                    <span class="result">== 0 грн</span><br><br>
+                </div>
+        
+                <!-- Послуги -->
+
+                <h1>Послуги</h1> 
+                <div class="service">
+                    <label>Доступ до інтернету на годину (від 30 до 70 грн): </label><br>
+                    <button class="decrement">-</button>
+                    <span class="quantity" data-price="30">0</span>
+                    <button class="increment">+</button>
+                    <span class="result">== 0 грн</span><br><br>
+                </div>
+        
+                <div class="service">
+                    <label>Допомога адміністратора на 1хв (5 грн): </label><br>
+                    <button class="decrement">-</button>
+                    <span class="quantity" data-price="5">0</span>
+                    <button class="increment">+</button>
+                    <span class="result">== 0 грн</span><br><br>
+                </div>
+        
+                <div class="service">
+                    <label>Пошук інформації (від 30 до 100 грн): </label><br>
+                    <button class="decrement">-</button>
+                    <span class="quantity" data-price="30">0</span>
+                    <button class="increment">+</button>
+                    <span class="result">== 0 грн</span><br><br>
+                </div>
+        
+                <div class="service">
+                    <label>Розпінавання тексту на 1 сторінці (5 грн): </label><br>
+                    <button class="decrement">-</button>
+                    <span class="quantity" data-price="5">0</span>
+                    <button class="increment">+</button>
+                    <span class="result">== 0 грн</span><br><br>
+                </div>
+        
+                <div class="service">
+                    <label>Відправлення на пошту (5 грн): </label><br>
+                    <button class="decrement">-</button>
+                    <span class="quantity" data-price="5">0</span>
+                    <button class="increment">+</button>
+                    <span class="result">== 0 грн</span><br><br>
+                </div>
+        
+                <div class="service">
+                    <label>Редагування тексту на 1 сторінці (від 30 до 80 грн): </label><br>
+                    <button class="decrement">-</button>
+                    <span class="quantity" data-price="30">0</span>
+                    <button class="increment">+</button>
+                    <span class="result">== 0 грн</span><br><br>
+                </div>
+        
+                <div class="service">
+                    <label>Редагування тексту до 10 символів (20 грн): </label><br>
+                    <button class="decrement">-</button>
+                    <span class="quantity" data-price="20">0</span>
+                    <button class="increment">+</button>
+                    <span class="result">== 0 грн</span><br><br>
+                </div>
+        
+                <!-- Інше -->
+
+                <h1>Інше</h1> 
+                <div class="service">
+                    <label>Ламінування (25 грн): </label><br>
+                    <button class="decrement">-</button>
+                    <span class="quantity" data-price="25">0</span>
+                    <button class="increment">+</button>
+                    <span class="result">== 0 грн</span><br><br>
+                </div>
+        
+                <div class="service">
+                    <label>Брошурування (від 100 грн): </label><br>
+                    <button class="decrement">-</button>
+                    <span class="quantity" data-price="100">0</span>
+                    <button class="increment">+</button>
+                    <span class="result">== 0 грн</span><br><br>
+                </div>
+        
+                <div class="service">
+                    <label>Порізка (5 грн): </label><br>
+                    <button class="decrement">-</button>
+                    <span class="quantity" data-price="5">0</span>
+                    <button class="increment">+</button>
+                    <span class="result">== 0 грн</span><br><br>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

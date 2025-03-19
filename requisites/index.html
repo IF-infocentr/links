@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="/links-beta/img/logoIcon.ico">
+        <link rel="stylesheet" href="/links-beta/css/requisites.css">
+        <title>Рекзвізити ІНФО-ЦЕНТР</title>
+
+        <script src="/links-beta/js/copyOnClick.js"></script>
+        <script src="/links-beta/js/welcome.js"></script>
+    </head>
+    <body>
+        <div class="welcome-screen" id="welcomeScreen">
+			<img src="/links-beta/img/logo.png" alt="Welcome">
+		</div>
+
+        <header>
+            <div class="logotype">
+                <img alt="ІНФОРМАЦІЙНИЙ ЦЕНТР" id="headerLogo" src="/links-beta/img/logo.png">
+            </div>
+        </header>
+    
+        <div class="mainBtn">
+            <button class="buttonStyle" role="button" onclick="window.open('/links-beta/', '_self')">На головну</button><br>
+        </div>
+    
+        <main>
+            <h1 id="requisites">Рекзвізити</h1>
+
+            <p>Натисніть на текст щоб скопіювати</p>
+
+            <div>
+                <h2>Переказ на картку Monobank</h2>
+                <h3>ПІБ Отримувача</h3>
+                <p><a onclick="copyText(event, this)">ФОП Станішевський М. І.</a></p>
+                <h3>Номер картки</h3>
+                <p><a onclick="copyText(event, this)"> 5408 8100 4153 0030</a></p>
+            </div>
+
+            <br>
+
+            <div>
+                <h2>Переказ по рекзвізитам IBAN</h2>
+                <h3>ПІБ Отримувача</h3>
+                <p><a onclick="copyText(event, this)">Станішевський Михайло Іванович</a></p>
+                <h3>IBAN</h3>
+                <p><a onclick="copyText(event, this)">UA613220010000026005340063558</a></p>
+                <h3>ЄДРПОУ</h3>
+                <p><a onclick="copyText(event, this)">3814010214</a></p>
+            </div>
+        </main>
+    </body>
+</html>

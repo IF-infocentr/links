@@ -1,0 +1,242 @@
+/* CSS для сторінки з цінами */
+
+/*Підєднання шрифта*/
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap'); 
+
+@media screen and (min-aspect-ratio: 16/9) { /*Адаптивність під ПК та екрани 16х9*/
+	html {
+		overflow-x: hidden !important; 
+	}
+
+	.logotype { /* Контейнер логотипу */
+		padding-top: 1vw !important;
+		padding-bottom: 1vw !important;
+	}
+
+	#headerLogo { /* Фото логотипу */
+		width: 20vw !important; 
+	}
+	
+	main { /* Стиль для головного контейнеру з цінами і калькулятором цін */
+		margin: auto;
+		margin-top: 0 !important;
+		width: 35vw !important;
+	}
+
+	#price {
+		font-size: 60px !important;
+	}
+
+	main h1 {
+		font-size: 36px !important;
+	}
+	
+	main h2 {
+		font-size: 30px !important;
+	}
+	
+	.buttonStyle { /* Стиль для кнопки */
+		width: 20vw !important;
+		height: 5vw !important;
+	
+		font-size: 24px !important;
+	}
+
+	.result p { /* Контейнер підрахунку (Кінцева сумма) */
+		font-size: 36px !important;
+		font-weight: 500 !important;
+	}
+
+	.reset { /* Кнопка скидання */
+		font-size: 36px !important;
+		width: 15vw !important;
+		height: 5vw !important;
+	}
+
+	.result { 
+		font-size: 30px !important;
+		font-weight: 500 !important;
+	}
+
+	.service { /* Контейнера послуг */
+		font-size: 30px !important;
+		margin-bottom: 0px !important;
+	}
+
+	.decrement { /* Стиль для кнопок [ - ] */
+		margin-right: 0.5vw !important;
+		font-size: 30px !important;
+		width: 2vw !important;
+		height: 2vw !important;
+	}
+	
+	.increment { /* Стиль для кнопок [ + ] */
+		margin-left: 0.5vw !important;
+		margin-right: 0.5vw !important;
+		font-size: 30px !important;
+		width: 2vw !important;
+		height: 2vw !important;
+	}
+
+	.service span { /* Текст результату в контейнерах послуг */
+		font-size: 30px !important;
+	}
+}
+
+/* Загальний CSS */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+	font-family: "Alegreya Sans", sans-serif;
+	overflow-x: hidden; 
+
+	height: 100vh;
+	width: 100vw;
+}
+
+body {
+	background-color: #000000;
+	background-image: url(/links-beta/img/bg.png);
+
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed; 
+
+    font-size: 14px;
+}
+
+.logotype { /* Контейнер логотипу */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+	padding-top: 5vw;
+	padding-bottom: 5vw;
+}
+
+#headerLogo { /* Фото логотипу */
+	width: 70vw;
+	padding: 30px;
+	border-radius: 30px;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.mainBtn { /* Контейнер з кнопками */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: auto;
+}
+
+.buttonStyle { /* Стиль для кнопки */
+	background-color: #f3f7fe;
+	color: #3b82f6;
+	border: none;
+	cursor: pointer;
+	border-radius: 30px;
+	width: 70vw;
+	height: 25vw;
+	transition: 0.3s;
+
+	font-size: 60px;
+	font-weight: 600;
+}
+
+.buttonStyle:hover {
+	background-color: #3b82f6;
+	box-shadow: 0 0 0 5px #3b83f65f;
+	color: #fff;
+}
+
+main { /* Стиль для головного контейнеру з цінами і калькулятором цін */
+	margin-top: 4vw;
+	background-color: rgba(255, 255, 255, 0.85);
+	border-radius: 30px;
+	padding: 30px 30px 50px 30px;
+}
+
+#price {
+	text-align: center; 
+	font-size: 90px;
+}
+
+main h1 {
+	font-size: 60px;
+}
+
+main h2 {
+	font-size: 50px;
+}
+
+.result { /* Контейнер підрахунку */
+	text-align: center;
+	font-size: 60px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.resetButton { /* Контейнер кнопки скидання */
+	display: flex;
+	justify-content: center;
+}
+
+.reset { /* Кнопка скидання */
+	border-radius: 15px;
+	font-size: 60px;
+	width: 50vw;
+	height: 15vw;
+}
+
+.service { /* Контейнера послуг */
+	font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.service span { /* Текст результату в контейнерах послуг */
+	font-size: 60px;
+}
+
+.decrement { /* Стиль для кнопок [ - ] */
+	border-radius: 5px;
+	margin-right: 2vw;
+	font-size: 40px;
+	width: 5vw;
+	height: 5vw;
+    background-color: whitesmoke;
+}
+
+.increment { /* Стиль для кнопок [ + ] */
+	border-radius: 5px;
+	margin-left: 2vw;
+	margin-right: 2vw;
+	font-size: 40px;
+	width: 5vw;
+	height: 5vw;
+    background-color: whitesmoke;
+}
+
+.welcome-screen { /* Стиль для вітального екрану */
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: opacity 1s ease-out;
+	z-index: 9999;
+}
+.welcome-screen img { /* Логотип в вітальному екрані */
+	max-width: 50%;
+	max-height: 50%;
+}
+.hidden { /* Стиль для закритого вітального екрану */
+	opacity: 0;
+	pointer-events: none;
+}

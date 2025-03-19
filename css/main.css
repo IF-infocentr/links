@@ -1,0 +1,229 @@
+/* CSS для головної сторінки */
+
+/*Підєднання шрифта*/
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap'); 
+
+@media screen and (min-aspect-ratio: 16/9) { /*Адаптивність під ПК та екрани 16х9*/
+	html {
+		overflow-x: hidden !important; 
+	}
+
+	.logotype { /* Контейнер логотипу */
+		padding-top: 1vw !important;
+		padding-bottom: 5vw !important;
+	}
+
+	#headerLogo { /* Фото логотипу */
+		width: 20vw !important; 
+	}
+	
+	.mainBtn { /* Контейнер з кнопками ціни і реквізитів */
+		margin: auto;
+		width: 35vw !important;
+	}
+
+	.linkBtn { /* Контейнер з кнопками відправки */
+		margin: auto;
+		margin-top: 1vw !important;
+		width: 35vw !important;
+	}
+
+	.buttonBox { /* Стилі для контейнерів кнопок */
+		padding: 10px !important;
+	}
+	
+	.buttonBox span {
+		width: 10vw !important;
+		font-size: 2.5vw !important;
+		margin: 2vw !important;
+	}
+
+	.buttonImage { /* Зображення біля кнопки */
+		width: 7.5vw !important;
+	}
+	
+	.buttonStyle { /* Стиль для кнопки */
+		width: 10vw !important;
+		height: 5vw !important;
+	
+		font-size: 1.5vw !important;
+	}
+
+	footer { /* Стиль для футера */
+		padding-top: 1vw !important;
+		width: 35vw !important;
+		margin: auto;
+	}
+	
+	.contact { /* Стиль для контейнеру контактів */
+		height: 15vw !important;
+		font-size: 1.75vw !important;
+	}
+	
+	.map { /* Стиль для карти */
+		padding-top: 1vw !important;
+		width: 35vw !important;
+		height: 40vh !important;
+	}
+}
+
+/* Загальний CSS */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+	font-family: "Alegreya Sans", sans-serif;
+	overflow-x: hidden; 
+}
+
+body {
+	background-color: #000000;
+	background-image: url(/links-beta/img/bg.png);
+
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed; 
+}
+
+.logotype { /* Контейнер логотипу */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+	padding-top: 15vw;
+	padding-bottom: 15vw;
+}
+
+#headerLogo { /* Фото логотипу */
+	width: 70vw;
+	padding: 30px;
+	border-radius: 30px;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.mainBtn { /* Контейнер з кнопками ціни і реквізитів */
+	padding: 25px;
+	border-radius: 100px 100px 30px 30px;
+	background-color: rgba(255, 255, 255, 0.85);
+}
+
+.linkBtn { /* Контейнер з кнопками */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: auto;
+
+	margin-top: 5vw;
+
+	padding: 25px;
+	border-radius: 30px 30px 30px 30px;
+	background-color: rgba(255, 255, 255, 0.85);
+}
+
+.buttonBox { /* Стилі для контейнерів кнопок */
+	padding: 50px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonBox span {
+	width: 30vw;
+	text-align: center;
+	font-size: 60px;
+	font-weight: 700;
+	margin: 40px;
+}
+
+.buttonImage { /* Зображення біля кнопок */
+	width: 20vw;
+	padding: 10px;
+}
+
+.buttonStyle { /* Стиль для кнопки */
+	background-color: #f3f7fe;
+	color: #3b82f6;
+	border: none;
+	cursor: pointer;
+	border-radius: 30px;
+	width: 25vw;
+	height: 10vw;
+	transition: 0.3s;
+
+	font-size: 36px;
+	font-weight: 600;
+}
+
+.buttonStyle:hover {
+	background-color: #3b82f6;
+	box-shadow: 0 0 0 5px #3b83f65f;
+	color: #fff;
+}
+
+#buttonPrice { /* Окремий стиль для кнопки з цінами */
+	font-size: 32px;
+}
+
+footer { /* Стиль для футера */
+	display:block;
+	padding-top: 5vw;
+}
+
+.contact { /* Стиль для контейнеру контактів */
+	border-radius: 30px;
+	background-color: rgba(255, 255, 255, 0.85);
+
+	color: #292828;
+	font-weight: 700;
+
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-direction: column;
+
+	font-size: 50px;
+	height: 40vw;
+}
+
+.contact a { /* Стиль для посилань у контактах */
+	padding: 10px;
+	color: #626262;
+	text-decoration: none;
+
+}
+.contact a:hover {
+	color: #0d0d0d;
+}
+
+.map { /* Стиль для карти */
+	padding-top: 5vw;
+
+	border: 1px transparent solid;
+	width: 98.4vw;
+	height: 30vh;
+}
+
+.welcome-screen { /* Стиль для вітального екрану */
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: opacity 1s ease-out;
+	z-index: 9999;
+}
+.welcome-screen img { /* Логотип в вітальному екрані */
+	max-width: 50%;
+	max-height: 50%;
+}
+.hidden { /* Стиль для закритого вітального екрану */
+	opacity: 0;
+	pointer-events: none;
+}
